@@ -29,7 +29,7 @@ An intelligent stock analysis dashboard with technical indicators, sentiment ana
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_GITHUB_USERNAME/stockpulse-ai.git
+git clone https://github.com/Balajireddypothapu/stockpulse-ai.git
 cd stockpulse-ai
 
 # Create virtual environment
@@ -56,7 +56,8 @@ Open **http://localhost:5000** in your browser.
 
 ## 📸 Screenshots
 
-> Add screenshots here after running the app
+### Analysis Dashboard
+![StockPulse Dashboard](screenshots/dashboard.png)
 
 ## ⚠️ Disclaimer
 
