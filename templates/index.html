@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockPulse AI — Smart Stock Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fas fa-chart-line"></i> StockPulse <span class="ai-badge">AI</span></div>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Enter stock symbol (e.g., AAPL, TSLA)" spellcheck="false">
+            <button id="searchBtn" class="btn-search">Analyze</button>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <!-- Trending Stocks -->
+        <section class="section">
+            <h2><i class="fas fa-fire"></i> Trending Stocks</h2>
+            <div class="trending-grid" id="trendingGrid">
+                <div class="loading"><i class="fas fa-spinner fa-spin"></i> Loading...</div>
+            </div>
+        </section>
+
+        <!-- Analysis Panel (hidden initially) -->
+        <section class="section analysis-panel" id="analysisPanel" style="display:none;">
+            <div class="analysis-header" id="analysisHeader"></div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3><i class="fas fa-chart-area"></i> Price Chart</h3>
+                    <canvas id="priceChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3><i class="fas fa-wave-square"></i> RSI Indicator</h3>
+                    <canvas id="rsiChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Sentiment -->
+            <div class="sentiment-panel" id="sentimentPanel"></div>
+        </section>
+
+        <!-- Compare Section -->
+        <section class="section">
+            <h2><i class="fas fa-balance-scale"></i> Quick Compare</h2>
+            <div class="compare-table" id="compareTable">
+                <div class="loading"><i class="fas fa-spinner fa-spin"></i> Loading comparison...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>📈 StockPulse AI — Built with Python, Flask & Chart.js | Data is simulated for demonstration</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
