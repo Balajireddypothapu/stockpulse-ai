@@ -57,7 +57,8 @@ Open **http://localhost:5000** in your browser.
 ## 📸 Screenshots
 
 ### Analysis Dashboard
-![StockPulse Dashboard](screenshots/dashboard.png)
+![StockPulse Dashboard](screenshots/stockpulse_1.png)
+![StockPulse Analysis](screenshots/stockpulse_2.png)
 
 ## ⚠️ Disclaimer
 
